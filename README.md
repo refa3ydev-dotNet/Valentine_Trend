@@ -1,52 +1,47 @@
-# Valentine Website Trend App 💘
+# 💘 Valentine Link Generator (Trend Website)
 
-A playful, interactive Valentine's Day invitation app built with Next.js, TypeScript, and Tailwind CSS.
-Features an escaping "No" button, bilingual support (English/Arabic), and a confetti celebration mode.
+A viral-style Valentine mini web app:
+1) Generate a shareable link  
+2) Ask the big question with a runaway **“No”** button 😭  
+3) Celebrate on the success page with cute effects 🎉🌸  
 
-## Features
+Supports **English + Arabic (RTL)** and uses **gender-based Arabic phrasing**.
 
-- **Link Generator**: Create a personalized invite link with names and gender.
-- **Interactive Question**: "No" button runs away from the cursor!
-- **Mobile Friendly**: Works on touch devices (button jumps on tap).
-- **Bilingual**: Supports English and Arabic text.
-- **Celebration**: Confetti and floating hearts animation.
+---
 
-## Tech Stack
+## ✨ Features
+- 🔗 **Link Generator**: enter your name + your valentine’s name and copy a shareable link
+- 🏃‍♂️ **Runaway “No” Button**: escapes the cursor but stays inside its container
+- 🌍 **Language Toggle**: EN/AR with proper RTL layout
+- 🧠 **Arabic Grammar Support**: success text changes based on sender gender (فرحان / فرحانة)
+- 🎊 **Celebration Effects**: confetti + fun animations
+- 📱 **Responsive UI**: looks great on mobile & desktop
 
-- Next.js 14 (App Router)
-- TypeScript
-- Tailwind CSS
-- canvas-confetti
-- lucide-react
+---
 
-## How to Run
+## 🧩 Pages
+- `/` → Link Generator  
+- `/ask` → Question page (Yes / No)  
+- `/yes` → Success page 🎉  
 
-1.  **Install Dependencies**
-    ```bash
-    npm install
-    ```
+Query params:
+- `from` = sender name  
+- `to` = valentine name  
+- `g` = gender (`male` | `female`)  
 
-    *Note: If you encounter issues with `npm` not being found, ensure Node.js is installed and in your PATH.*
+Example:
+`/ask?from=Omar&to=Sara&g=male`
 
-2.  **Run Development Server**
-    ```bash
-    npm run dev
-    ```
+---
 
-3.  **Open the App**
-    Visit [http://localhost:3000](http://localhost:3000)
+## 🛠 Tech Stack
+- **Next.js (App Router)**
+- **TypeScript**
+- **Tailwind CSS**
 
-## Deployment
+---
 
-This app is ready for Vercel.
-1. Push to GitHub.
-2. Import project in Vercel.
-3. Deploy!
-
-## Project Structure
-
-- `app/`: Next.js App Router pages (`layout.tsx`, `page.tsx`, `ask/page.tsx`, `yes/page.tsx`).
-- `components/`: UI components (`Button`, `Card`, `Input`, `FloatingHearts`).
-- `public/`: Static assets.
-# Valentine_Trend
-# Valentine_Trend
+## 🚀 Getting Started
+```bash
+npm install
+npm run dev
